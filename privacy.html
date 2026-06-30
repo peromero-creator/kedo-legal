@@ -6,7 +6,7 @@
 <title>kedo — Privacy Policy / Gizlilik Politikası</title>
 <link rel="stylesheet" href="style.css" />
 </head>
-<body>
+<body class="lang-en">
 <div class="wrap">
   <header class="site"><span class="brand">kedo<small>privacy</small></span></header>
   <nav class="top">
@@ -16,9 +16,13 @@
     <a href="guidelines.html">Guidelines</a>
   </nav>
 
-  <p class="lang"><a href="#tr">🇹🇷 Türkçe için tıklayın ↓</a></p>
+  <div class="langtoggle" role="group" aria-label="Language">
+    <button type="button" data-lang="en" onclick="kedoSetLang('en')">English</button>
+    <button type="button" data-lang="tr" onclick="kedoSetLang('tr')">Türkçe</button>
+  </div>
 
   <!-- ================= ENGLISH ================= -->
+  <div class="L en">
   <h1 id="en">Privacy Policy</h1>
   <p class="updated">Last updated: 27 June 2026 · <span class="pill">EN</span></p>
 
@@ -34,7 +38,7 @@
 
   <h2>1. Who is responsible (Data Controller)</h2>
   <p>kedo, operated by <strong>Alperen Yazıcı</strong> (individual developer, Türkiye). Contact:
-  <a href="mailto:support@kedo.app">support@kedo.app</a>.</p>
+  <a href="mailto:support@kedo.pet">support@kedo.pet</a>.</p>
 
   <h2>2. What we collect and why</h2>
   <table>
@@ -80,7 +84,7 @@
   about it; request correction or deletion; object to processing; withdraw consent; and request
   portability. You can <strong>delete your account and data directly in the app</strong>
   (Settings → Delete account). For any other request, email
-  <a href="mailto:support@kedo.app">support@kedo.app</a>; we respond within 30 days. KVKK users may also
+  <a href="mailto:support@kedo.pet">support@kedo.pet</a>; we respond within 30 days. KVKK users may also
   complain to the Personal Data Protection Authority (<a href="https://www.kvkk.gov.tr">kvkk.gov.tr</a>).</p>
 
   <h2>8. Children</h2>
@@ -89,7 +93,9 @@
   <h2>9. Changes</h2>
   <p>We will post any changes here and update the date above; significant changes will be announced in the app.</p>
 
-  <hr class="div" />
+  </div>
+
+  <div class="L tr">
 
   <!-- ================= TÜRKÇE ================= -->
   <h1 id="tr">Gizlilik Politikası ve KVKK Aydınlatma Metni</h1>
@@ -106,7 +112,7 @@
 
   <h2>1. Veri Sorumlusu</h2>
   <p>kedo, <strong>Alperen Yazıcı</strong> (bireysel geliştirici, Türkiye) tarafından işletilmektedir. İletişim:
-  <a href="mailto:support@kedo.app">support@kedo.app</a>.</p>
+  <a href="mailto:support@kedo.pet">support@kedo.pet</a>.</p>
 
   <h2>2. İşlenen veriler ve amaçları</h2>
   <table>
@@ -150,7 +156,7 @@
   <p>KVKK m.11 uyarınca; verilerinizin işlenip işlenmediğini öğrenme, bilgi talep etme, düzeltilmesini
   veya silinmesini isteme, işlemeye itiraz etme, açık rızanızı geri çekme ve veri taşınabilirliği
   haklarına sahipsiniz. <strong>Hesabınızı ve verilerinizi doğrudan uygulamadan silebilirsiniz</strong>
-  (Ayarlar → Hesabı sil). Diğer talepler için <a href="mailto:support@kedo.app">support@kedo.app</a>
+  (Ayarlar → Hesabı sil). Diğer talepler için <a href="mailto:support@kedo.pet">support@kedo.pet</a>
   adresine yazın; en geç 30 gün içinde yanıtlarız. Ayrıca Kişisel Verileri Koruma Kurumu’na
   (<a href="https://www.kvkk.gov.tr">kvkk.gov.tr</a>) şikâyette bulunabilirsiniz.</p>
 
@@ -160,10 +166,13 @@
   <h2>9. Değişiklikler</h2>
   <p>Değişiklikleri bu sayfada yayınlar ve yukarıdaki tarihi güncelleriz; önemli değişiklikler uygulamada duyurulur.</p>
 
+  </div>
+
   <footer>
-    kedo · <a href="mailto:support@kedo.app">support@kedo.app</a> · İletişim<br/>
+    kedo · <a href="mailto:support@kedo.pet">support@kedo.pet</a> · İletişim<br/>
     <a href="terms.html">Terms / Koşullar</a> · <a href="guidelines.html">Community Guidelines / Topluluk Kuralları</a>
   </footer>
 </div>
+  <script src="lang.js"></script>
 </body>
 </html>

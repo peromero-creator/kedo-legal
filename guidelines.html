@@ -6,7 +6,7 @@
 <title>kedo — Community Guidelines / Topluluk Kuralları</title>
 <link rel="stylesheet" href="style.css" />
 </head>
-<body>
+<body class="lang-en">
 <div class="wrap">
   <header class="site"><span class="brand">kedo<small>community guidelines</small></span></header>
   <nav class="top">
@@ -16,9 +16,13 @@
     <a href="guidelines.html">Guidelines</a>
   </nav>
 
-  <p class="lang"><a href="#tr">🇹🇷 Türkçe için tıklayın ↓</a></p>
+  <div class="langtoggle" role="group" aria-label="Language">
+    <button type="button" data-lang="en" onclick="kedoSetLang('en')">English</button>
+    <button type="button" data-lang="tr" onclick="kedoSetLang('tr')">Türkçe</button>
+  </div>
 
   <!-- ENGLISH -->
+  <div class="L en">
   <h1 id="en">Community Guidelines</h1>
   <p class="updated">Last updated: 27 June 2026 · <span class="pill">EN</span></p>
 
@@ -55,9 +59,11 @@
   temporarily freeze its access to precise locations while we review. Animal safety always comes first.</p>
 
   <h2>Contact</h2>
-  <p>Questions or something urgent? <a href="mailto:support@kedo.app">support@kedo.app</a></p>
+  <p>Questions or something urgent? <a href="mailto:support@kedo.pet">support@kedo.pet</a></p>
 
-  <hr class="div" />
+  </div>
+
+  <div class="L tr">
 
   <!-- TÜRKÇE -->
   <h1 id="tr">Topluluk Kuralları</h1>
@@ -97,12 +103,15 @@
   dondurabilir. Hayvan güvenliği her zaman önce gelir.</p>
 
   <h2>İletişim</h2>
-  <p>Sorularınız veya acil bir durum mu var? <a href="mailto:support@kedo.app">support@kedo.app</a></p>
+  <p>Sorularınız veya acil bir durum mu var? <a href="mailto:support@kedo.pet">support@kedo.pet</a></p>
+
+  </div>
 
   <footer>
-    kedo · <a href="mailto:support@kedo.app">support@kedo.app</a><br/>
+    kedo · <a href="mailto:support@kedo.pet">support@kedo.pet</a><br/>
     <a href="privacy.html">Privacy / Gizlilik</a> · <a href="terms.html">Terms / Koşullar</a>
   </footer>
 </div>
+  <script src="lang.js"></script>
 </body>
 </html>

@@ -51,3 +51,12 @@ ul{padding-left:20px} li{margin:4px 0}
 hr.div{border:none; border-top:2px dashed var(--line); margin:48px 0}
 footer{color:var(--muted); font-size:13px; margin-top:30px; border-top:1px solid var(--line); padding-top:16px}
 .pill{display:inline-block; background:#FBE3DA; color:var(--coral-dark); font-weight:800; font-size:11px; padding:3px 9px; border-radius:10px; letter-spacing:.3px}
+
+
+/* Language toggle (EN / TR) */
+.langtoggle { display:inline-flex; gap:4px; background:#EFE6D4; border:1px solid #E4D9C2; border-radius:999px; padding:4px; margin:0 0 22px; }
+.langtoggle button { font:inherit; font-weight:700; font-size:14px; line-height:1; cursor:pointer; border:0; background:transparent; color:#9B8E76; padding:8px 18px; border-radius:999px; transition:background .15s, color .15s; }
+.langtoggle button:hover { color:#6F6553; }
+.langtoggle button.active { background:#D4572A; color:#fff; }
+body.lang-en .L.tr { display:none; }
+body.lang-tr .L.en { display:none; }
