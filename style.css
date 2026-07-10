@@ -53,10 +53,13 @@ footer{color:var(--muted); font-size:13px; margin-top:30px; border-top:1px solid
 .pill{display:inline-block; background:#FBE3DA; color:var(--coral-dark); font-weight:800; font-size:11px; padding:3px 9px; border-radius:10px; letter-spacing:.3px}
 
 
-/* Language toggle (EN / TR) */
-.langtoggle { display:inline-flex; gap:4px; background:#EFE6D4; border:1px solid #E4D9C2; border-radius:999px; padding:4px; margin:0 0 22px; }
-.langtoggle button { font:inherit; font-weight:700; font-size:14px; line-height:1; cursor:pointer; border:0; background:transparent; color:#9B8E76; padding:8px 18px; border-radius:999px; transition:background .15s, color .15s; }
+/* Language toggle — modern EN|TR segmented switch with a sliding thumb.
+   The thumb position is driven by the body lang class, so no extra JS. */
+.langtoggle { position:relative; display:inline-flex; background:#EFE6D4; border:1px solid #E4D9C2; border-radius:999px; padding:3px; margin:0 0 22px; }
+.langtoggle::before { content:""; position:absolute; top:3px; left:3px; width:52px; height:calc(100% - 6px); background:#D4572A; border-radius:999px; box-shadow:0 1px 5px rgba(212,87,42,.35); transition:transform .25s cubic-bezier(.4,0,.2,1); }
+body.lang-tr .langtoggle::before { transform:translateX(52px); }
+.langtoggle button { position:relative; z-index:1; width:52px; font:inherit; font-weight:800; font-size:12.5px; letter-spacing:.08em; line-height:1; cursor:pointer; border:0; background:transparent; color:#9B8E76; padding:8px 0; border-radius:999px; text-align:center; transition:color .2s; }
 .langtoggle button:hover { color:#6F6553; }
-.langtoggle button.active { background:#D4572A; color:#fff; }
+.langtoggle button.active { color:#fff; }
 body.lang-en .L.tr { display:none; }
 body.lang-tr .L.en { display:none; }
