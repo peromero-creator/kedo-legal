@@ -3,46 +3,79 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>kedo · Legal</title>
+<title>kedo · Legal & Safety / Hukuk & Güvenlik</title>
 <link rel="stylesheet" href="style.css" />
 </head>
-<body>
+<body class="lang-en">
 <div class="wrap">
   <header class="site">
     <span class="brand">kedo<small>a kinder map for street animals</small></span>
   </header>
 
+  <div class="langtoggle" role="group" aria-label="Language">
+    <button type="button" data-lang="en" onclick="kedoSetLang('en')">English</button>
+    <button type="button" data-lang="tr" onclick="kedoSetLang('tr')">Türkçe</button>
+  </div>
+
+  <!-- ================= ENGLISH ================= -->
+  <div class="L en">
   <h1>Legal & Safety</h1>
   <p class="updated">kedo maps the feeding spots of the street — who's fed, who's hungry, who needs
-  someone today. A map like that only works if the animals stay safe and the people stay private; these
-  pages explain, concretely, how kedo does both. / kedo, sokağın besleme noktalarını haritalar — kim tok,
-  kim aç, bugün kimin birine ihtiyacı var. Böyle bir harita ancak hayvanlar güvende, insanlar mahrem
-  kalırsa çalışır; bu sayfalar ikisini de somut olarak nasıl yaptığımızı anlatır.</p>
+  someone today. A map like that only works if the animals stay safe and the people stay private;
+  these pages explain, concretely, how kedo does both.</p>
 
   <div class="card">
-    <p><a href="privacy.html"><strong>Privacy Policy &amp; KVKK Aydınlatma Metni →</strong></a><br/>
-    What data we collect, why, and your rights. / Hangi verileri neden topladığımız ve haklarınız.</p>
+    <p><a href="privacy.html"><strong>Privacy Policy &amp; KVKK Clarification Text →</strong></a><br/>
+    What data we collect, why, and your rights.</p>
   </div>
   <div class="card">
     <p><a href="terms.html"><strong>Terms of Service →</strong></a><br/>
-    The rules for using kedo, including the no-harm pledge. / kedo kullanım koşulları.</p>
+    The rules for using kedo, including the no-harm pledge.</p>
   </div>
   <div class="card">
     <p><a href="guidelines.html"><strong>Community Guidelines →</strong></a><br/>
-    How we keep the community kind and animals safe. / Topluluk kuralları.</p>
+    How we keep the community kind and animals safe — and how kedo actually works.</p>
   </div>
 
   <div class="callout">
     <strong>Our core promise:</strong> we never publish the precise location of an animal or feeding
-    spot. Public pins are blurred to an approximate (~110&nbsp;m) area. /
-    <strong>Temel sözümüz:</strong> hiçbir hayvanın veya besleme noktasının kesin konumunu yayınlamayız;
-    haritadaki konumlar ~110&nbsp;m yaklaşık alana bulanıklaştırılır.
+    spot. Public pins are blurred to an approximate (~110&nbsp;m) area.
+  </div>
+  </div>
+
+  <!-- ================= TÜRKÇE ================= -->
+  <div class="L tr">
+  <h1>Hukuk &amp; Güvenlik</h1>
+  <p class="updated">kedo, sokağın besleme noktalarını haritalar — kim tok, kim aç, bugün kimin
+  birine ihtiyacı var. Böyle bir harita ancak hayvanlar güvende, insanlar mahrem kalırsa çalışır;
+  bu sayfalar ikisini de somut olarak nasıl yaptığımızı anlatır.</p>
+
+  <div class="card">
+    <p><a href="privacy.html"><strong>Gizlilik Politikası &amp; KVKK Aydınlatma Metni →</strong></a><br/>
+    Hangi verileri neden topladığımız ve haklarınız.</p>
+  </div>
+  <div class="card">
+    <p><a href="terms.html"><strong>Kullanım Koşulları →</strong></a><br/>
+    kedo'yu kullanmanın kuralları, zarar-vermeme taahhüdü dahil.</p>
+  </div>
+  <div class="card">
+    <p><a href="guidelines.html"><strong>Topluluk Kuralları →</strong></a><br/>
+    Topluluğu nazik, hayvanları güvende nasıl tutuyoruz — ve kedo gerçekte nasıl işliyor.</p>
+  </div>
+
+  <div class="callout">
+    <strong>Temel sözümüz:</strong> hiçbir hayvanın veya besleme noktasının kesin konumunu
+    yayınlamayız; haritadaki konumlar ~110&nbsp;m yaklaşık alana bulanıklaştırılır.
+  </div>
   </div>
 
   <footer>
-    Contact / İletişim: <a href="mailto:support@kedo.pet">support@kedo.pet</a>
-    <p style="margin-top:14px; opacity:.55; font-size:12px;">made in loving memory of Casper 🤍, the first kedo</p>
+    <span class="L en">Contact: <a href="mailto:support@kedo.pet">support@kedo.pet</a>
+    <p style="margin-top:14px; opacity:.55; font-size:12px;">made in loving memory of Casper 🤍, the first kedo</p></span>
+    <span class="L tr">İletişim: <a href="mailto:support@kedo.pet">support@kedo.pet</a>
+    <p style="margin-top:14px; opacity:.55; font-size:12px;">Casper'ın sevgi dolu anısına 🤍 — ilk kedo</p></span>
   </footer>
 </div>
+<script src="lang.js"></script>
 </body>
 </html>
