@@ -24,7 +24,7 @@
   <!-- ================= ENGLISH ================= -->
   <div class="L en">
   <h1 id="en">Privacy Policy</h1>
-  <p class="updated">Last updated: 27 June 2026 · <span class="pill">EN</span></p>
+  <p class="updated">Last updated: 10 July 2026 · <span class="pill">EN</span></p>
 
   <p>kedo (“kedo”, “we”, “us”) is a community map of street-animal feeding stations. This Privacy
   Policy explains what personal data we process, why, the legal grounds, who we share it with, how long
@@ -32,9 +32,11 @@
   6698) and the EU <strong>GDPR</strong>. For KVKK users, the Turkish section below is the clarification
   text (<em>aydınlatma metni</em>).</p>
 
-  <div class="callout"><strong>The short version:</strong> we collect the minimum we need to run a safe
-  community map. Your precise location is used only on your device and in the moment you add/confirm a
-  spot, what the public sees is always a blurred ~110&nbsp;m area. We never sell your data.</div>
+  <div class="callout"><strong>The short version:</strong> kedo runs on the least data it can. Your
+  exact GPS matters for exactly one moment — proving you are really standing at a feeding spot. What the
+  map shows anyone, always, is a blurred ~110&nbsp;m area. Photos are shrunk and cleaned of hidden
+  location tags on your phone before they upload. We never sell your data — a map for street animals has
+  nothing to sell.</div>
 
   <h2>1. Who is responsible (Data Controller)</h2>
   <p>kedo, operated by <strong>Alperen Yazıcı</strong> (individual developer, Türkiye). Contact:
@@ -54,7 +56,8 @@
   <h2>3. How location stays guarded</h2>
   <ul>
     <li>Raw GPS coordinates <strong>never leave the database in readable form</strong>. The public API can only return blurred (~110&nbsp;m) coordinates.</li>
-    <li>Precise coordinates are revealed only to a limited, trusted set of users, only when they are physically near, are rate-limited, and <strong>every reveal is logged</strong>.</li>
+    <li>The map itself is tiered (the <strong>trust ladder</strong>): new visitors see only public hubs (vets, parks, pet shops); members who sign the no-harm pledge see coarse district counts; phone-verified contributors see the full blurred map; and precise coordinates open only for proven caretakers (Guardians) — only when physically near the spot.</li>
+    <li>Precise-location reveals are rate-limited and <strong>every reveal is logged</strong>. Reporting an account can freeze its access to precise locations while we review.</li>
     <li>This is a deliberate animal-safety measure: exact stray locations can be misused to harm animals.</li>
   </ul>
 
@@ -62,7 +65,9 @@
   <p>We do not sell personal data. We use a small number of processors:</p>
   <ul>
     <li><strong>Supabase</strong>, database, authentication and photo storage (servers in the EU / Frankfurt). This may involve transfer of data abroad; safeguards apply under KVKK art. 9 / GDPR Chapter V.</li>
+    <li><strong>Mapbox</strong>, map tiles and nearby public places (vets, parks, pet shops). Drawing the map around you sends your current map view and IP address to Mapbox; stations’ precise stored coordinates are never sent.</li>
     <li><strong>Apple</strong>, Sign in with Apple and push notifications.</li>
+    <li><strong>Expo</strong>, delivery of push notifications (a push token identifies your device, not you; you can turn notifications off in iOS Settings at any time).</li>
     <li><strong>Google (Gemini)</strong>, only if you choose to generate an optional AI avatar for an animal; a photo is sent to generate the image and is not used to identify you.</li>
   </ul>
 
@@ -76,8 +81,9 @@
 
   <h2>6. Security</h2>
   <p>We protect data with database row-level security, location fuzzing, encryption in transit (HTTPS),
-  access controls, reveal auditing and rate limiting. No system is perfectly secure, but these measures
-  reflect KVKK art. 12 / GDPR art. 32.</p>
+  access controls, reveal auditing and rate limiting. Photos are downscaled and re-encoded on your device
+  before upload, which also strips hidden EXIF metadata (such as GPS tags) from the file. No system is
+  perfectly secure, but these measures reflect KVKK art. 12 / GDPR art. 32.</p>
 
   <h2>7. Your rights</h2>
   <p>Under KVKK art. 11 and the GDPR you may: learn whether we process your data and request information
@@ -99,16 +105,18 @@
 
   <!-- ================= TÜRKÇE ================= -->
   <h1 id="tr">Gizlilik Politikası ve KVKK Aydınlatma Metni</h1>
-  <p class="updated">Son güncelleme: 27 Haziran 2026 · <span class="pill">TR</span></p>
+  <p class="updated">Son güncelleme: 10 Temmuz 2026 · <span class="pill">TR</span></p>
 
   <p>kedo (“kedo”, “biz”), sokak hayvanları besleme noktalarının topluluk haritasıdır. Bu metin, 6698
   sayılı <strong>KVKK</strong> kapsamında aydınlatma yükümlülüğümüzü yerine getirmek ve AB
   <strong>GDPR</strong> ilkelerine uymak için hazırlanmıştır; hangi kişisel verileri, hangi amaçla ve
   hukuki sebeple işlediğimizi, kimlerle paylaştığımızı, ne kadar sakladığımızı ve haklarınızı açıklar.</p>
 
-  <div class="callout"><strong>Kısaca:</strong> güvenli bir topluluk haritası için yalnızca gereken
-  asgari veriyi toplarız. Kesin konumunuz sadece cihazınızda ve bir nokta eklerken/onaylarken
-  kullanılır; herkese görünen şey her zaman ~110&nbsp;m bulanıklaştırılmış alandır. Verilerinizi satmayız.</div>
+  <div class="callout"><strong>Kısaca:</strong> kedo, olabilecek en az veriyle çalışır. Kesin GPS
+  konumunuz tek bir an için önemlidir — bir besleme noktasının gerçekten başında durduğunuzu kanıtlarken.
+  Haritada herkesin gördüğü ise her zaman ~110&nbsp;m bulanıklaştırılmış bir alandır. Fotoğraflar,
+  yüklenmeden önce telefonunuzda küçültülür ve gizli konum etiketlerinden arındırılır. Verilerinizi asla
+  satmayız — sokak hayvanları için yapılmış bir haritanın satacak bir şeyi yoktur.</div>
 
   <h2>1. Veri Sorumlusu</h2>
   <p>kedo, <strong>Alperen Yazıcı</strong> (bireysel geliştirici, Türkiye) tarafından işletilmektedir. İletişim:
@@ -128,7 +136,8 @@
   <h2>3. Konum nasıl korunur</h2>
   <ul>
     <li>Ham GPS koordinatları <strong>okunabilir biçimde veritabanından asla çıkmaz</strong>; herkese açık API yalnızca ~110&nbsp;m bulanık koordinat döndürür.</li>
-    <li>Kesin koordinatlar yalnızca sınırlı ve güvenilen kullanıcılara, yalnızca fiziksel olarak yakınken açılır; hız sınırı uygulanır ve <strong>her açılış kayıt altına alınır</strong>.</li>
+    <li>Haritanın kendisi kademelidir (<strong>güven merdiveni</strong>): yeni ziyaretçiler yalnızca herkese açık yerleri görür (veteriner, park, pet shop); zarar-vermeme sözünü imzalayan üyeler kaba semt sayıları görür; telefonla doğrulanmış katkıcılar bulanık haritanın tamamını görür; kesin koordinatlar ise yalnızca kendini kanıtlamış bakıcılara (Gardiyanlar) — ve yalnızca o noktanın fiziksel olarak yakınındayken açılır.</li>
+    <li>Kesin konum açılışlarına hız sınırı uygulanır ve <strong>her açılış kayıt altına alınır</strong>. Bir hesabın şikâyet edilmesi, inceleme süresince o hesabın kesin konum erişimini dondurabilir.</li>
     <li>Bu, bilinçli bir hayvan güvenliği önlemidir: kesin sokak hayvanı konumları kötüye kullanılabilir.</li>
   </ul>
 
@@ -136,7 +145,9 @@
   <p>Kişisel verileri satmayız. Sınırlı sayıda veri işleyen kullanırız:</p>
   <ul>
     <li><strong>Supabase</strong>, veritabanı, kimlik doğrulama ve fotoğraf depolama (sunucular AB / Frankfurt’ta). Bu, yurt dışına veri aktarımı içerebilir; KVKK m.9 güvenceleri uygulanır.</li>
+    <li><strong>Mapbox</strong>, harita görüntüleri ve yakındaki herkese açık yerler (veteriner, park, pet shop). Haritayı çevrenizde çizmek için o anki harita görünümünüz ve IP adresiniz Mapbox sunucularına gider; noktaların saklanan kesin koordinatları asla gönderilmez.</li>
     <li><strong>Apple</strong>, Apple ile Giriş ve anlık bildirimler.</li>
+    <li><strong>Expo</strong>, anlık bildirimlerin iletimi (bildirim jetonu sizi değil cihazınızı tanımlar; bildirimleri iOS Ayarları’ndan dilediğiniz an kapatabilirsiniz).</li>
     <li><strong>Google (Gemini)</strong>, yalnızca bir hayvan için isteğe bağlı yapay zekâ avatarı oluşturmayı seçerseniz; görüntü üretmek için bir fotoğraf gönderilir, sizi kimliklendirmek için kullanılmaz.</li>
   </ul>
 
@@ -150,7 +161,9 @@
 
   <h2>6. Güvenlik</h2>
   <p>Verileri; satır düzeyi güvenlik (RLS), konum bulanıklaştırma, aktarımda şifreleme (HTTPS), erişim
-  kontrolleri, açılış denetimi ve hız sınırlama ile koruruz (KVKK m.12).</p>
+  kontrolleri, açılış denetimi ve hız sınırlama ile koruruz (KVKK m.12). Fotoğraflar yüklenmeden önce
+  cihazınızda küçültülüp yeniden kodlanır; bu işlem dosyadaki gizli EXIF üstverisini (ör. GPS etiketleri)
+  de temizler.</p>
 
   <h2>7. Haklarınız (KVKK m.11)</h2>
   <p>KVKK m.11 uyarınca; verilerinizin işlenip işlenmediğini öğrenme, bilgi talep etme, düzeltilmesini
